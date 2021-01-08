@@ -11,7 +11,6 @@ body {
   font-size: 1em;
   line-height: 1.65;
   color: #373F49;
-  background: #eee;
   margin: 0;
 }
 
@@ -29,6 +28,11 @@ h3 {
 
 a {
   color: currentColor;
+}
+
+#page-container {
+  max-width: 1600;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -52,15 +56,6 @@ a {
 /**
  *
  */
-.section-headline {
-  padding: 0 0 0.4em 0;
-  margin: 0 0 5vmin 0;
-  border-bottom: 1px solid #ddd;
-}
-
-/**
- *
- */
 .list-inline {
   margin: 0;
   padding: 0;
@@ -70,3 +65,22 @@ a {
   .list-inline li {
     display: inline-block;
   }
+
+.author {
+  width: calc(100% - 10vmin);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5vmin 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.authorImage {
+  flex: 0.4;
+}
+
+.authorBio {
+  flex: 0.6;
+  padding: 20px;
+}
